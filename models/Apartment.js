@@ -5,9 +5,9 @@ const ApartmentSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    description: String,
-    place: String,
-    service: [String]
+    capacity: Number,
+    services: [String],
+    price: Number
 })
 
 module.exports= ApartmentModel = mongoose.model("Apartment",ApartmentSchema);
