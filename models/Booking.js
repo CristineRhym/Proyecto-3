@@ -11,6 +11,11 @@ const BookingSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
         required:true
+    },
+    status:{
+        type: String,
+        default: "disponible",
+        enum: ["disponible", "reservado"]
     }
 });
 
